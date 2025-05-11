@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-&wd)!8z+y+c8qh58i$n3k9es*&!8d_a$a-$j8p!qf=mrd=*+a8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['roommate.oqdev.uz', 'localhost', '127.0.0.1']
 
 # Application definition
 
