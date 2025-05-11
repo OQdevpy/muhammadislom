@@ -1,0 +1,5 @@
+djangorestframework
+django-ckeditor
+Pillow
+django==5.0.0
+django-cors-headers
