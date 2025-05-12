@@ -160,10 +160,15 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # your React/Vue dev server
     "https://your-frontend-domain.com",
+    "https://room.oqdev.uz",
+    "https://www.lupinevent.com",
+    "https://lupinevent.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 
 CSRF_TRUSTED_ORIGINS = [
     "https://3f52-82-215-72-64.ngrok-free.app",
+    "https://www.lupinevent.com",
+    "https://room.oqdev.uz"
 ]
