@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Item
+from .models import Hero, Item
 from .models import About, Contact
 
 class ItemSerializer(serializers.ModelSerializer):
@@ -15,4 +15,10 @@ class AboutSerializer(serializers.ModelSerializer):
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
+        fields = '__all__'
+
+
+class HeroSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Hero
         fields = '__all__'

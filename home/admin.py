@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Item, About, Contact
+from .models import Hero, Item, About, Contact
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
@@ -13,3 +13,7 @@ class AboutAdmin(admin.ModelAdmin):
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('location', 'phoneNumber', 'email')
+
+@admin.register(Hero)
+class HeroAdmin(admin.ModelAdmin):
+    list_display = ('title', 'name')

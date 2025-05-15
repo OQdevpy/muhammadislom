@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .models import About, Contact, Item
-from .serializers import AboutSerializer, ContactSerializer, ItemSerializer
+from .models import About, Contact, Hero, Item
+from .serializers import AboutSerializer, ContactSerializer, HeroSerializer, ItemSerializer
 
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
@@ -14,3 +14,7 @@ class AboutViewSet(viewsets.ModelViewSet):
 class ContactViewSet(viewsets.ModelViewSet):
     queryset = Contact.objects.order_by('-id')[:1]
     serializer_class = ContactSerializer
+
+class HeroViewSet(viewsets.ModelViewSet):
+    queryset = Hero.objects.all()
+    serializer_class = HeroSerializer

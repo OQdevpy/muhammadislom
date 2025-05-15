@@ -31,3 +31,12 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.location
+
+
+class Hero(models.Model):
+    image = models.ImageField(upload_to='hero/')
+    title = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.title
